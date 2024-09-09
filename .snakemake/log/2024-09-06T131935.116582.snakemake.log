@@ -1,0 +1,122 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+download_sra        6              1              1
+total               7              1              1
+
+Select jobs to execute...
+
+[Fri Sep  6 13:19:35 2024]
+rule download_sra:
+    output: data/wz/sra/SRR12868134.sra
+    jobid: 2
+    wildcards: output_dir=data/wz, accession=SRR12868134
+    resources: tmpdir=/tmp
+
+
+[Fri Sep  6 13:19:35 2024]
+rule download_sra:
+    output: data/wz/sra/SRR12868130.sra
+    jobid: 4
+    wildcards: output_dir=data/wz, accession=SRR12868130
+    resources: tmpdir=/tmp
+
+
+[Fri Sep  6 13:19:35 2024]
+rule download_sra:
+    output: data/wz/sra/SRR12868149.sra
+    jobid: 6
+    wildcards: output_dir=data/wz, accession=SRR12868149
+    resources: tmpdir=/tmp
+
+
+[Fri Sep  6 13:19:35 2024]
+rule download_sra:
+    output: data/wz/sra/SRR12868133.sra
+    jobid: 1
+    wildcards: output_dir=data/wz, accession=SRR12868133
+    resources: tmpdir=/tmp
+
+
+[Fri Sep  6 13:19:35 2024]
+rule download_sra:
+    output: data/wz/sra/SRR12868137.sra
+    jobid: 3
+    wildcards: output_dir=data/wz, accession=SRR12868137
+    resources: tmpdir=/tmp
+
+
+[Fri Sep  6 13:19:35 2024]
+rule download_sra:
+    output: data/wz/sra/SRR12868139.sra
+    jobid: 5
+    wildcards: output_dir=data/wz, accession=SRR12868139
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Fri Sep  6 15:54:07 2024]
+Error in rule download_sra:
+    jobid: 4
+    output: data/wz/sra/SRR12868130.sra
+    shell:
+        
+        prefetch SRR12868130 --max-size 0 -o data/wz/sra/SRR12868130.sra
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep  6 15:54:07 2024]
+[Fri Sep  6 15:54:07 2024]
+Error in rule download_sra:
+    jobid: 3
+    output: data/wz/sra/SRR12868137.sra
+    shell:
+        
+        prefetch SRR12868137 --max-size 0 -o data/wz/sra/SRR12868137.sra
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep  6 15:54:07 2024]
+Error in rule download_sra:
+    jobid: 2
+    output: data/wz/sra/SRR12868134.sra
+    shell:
+        
+        prefetch SRR12868134 --max-size 0 -o data/wz/sra/SRR12868134.sra
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep  6 15:54:07 2024]
+Error in rule download_sra:
+    jobid: 1
+    output: data/wz/sra/SRR12868133.sra
+    shell:
+        
+        prefetch SRR12868133 --max-size 0 -o data/wz/sra/SRR12868133.sra
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule download_sra:
+    jobid: 6
+    output: data/wz/sra/SRR12868149.sra
+    shell:
+        
+        prefetch SRR12868149 --max-size 0 -o data/wz/sra/SRR12868149.sra
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep  6 15:54:09 2024]
+Error in rule download_sra:
+    jobid: 5
+    output: data/wz/sra/SRR12868139.sra
+    shell:
+        
+        prefetch SRR12868139 --max-size 0 -o data/wz/sra/SRR12868139.sra
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /home/pc-cito/Documents/master/thesis/WYtigger/.snakemake/log/2024-09-06T131935.116582.snakemake.log
