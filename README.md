@@ -17,7 +17,6 @@ This study utilized independent datasets from XY and WZ sex chromosome systems a
 
 ### Tools and Methods
 
-- **SEX-DETector**, **DiscoverY**, **RADSex**, **FindZX**: Reviewed for feature effectiveness and biological relevance.
 - **Coverage Calculation**: Based on WGS data and compared between males and females.
 - **Heterozygosity Measurement**: Variants with quality ≥ 30 were used to calculate heterozygosity per contig.
 - **GC Content Calculation**: Custom Python script using PySam library.
